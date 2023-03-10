@@ -3,6 +3,6 @@ function multiplyByTwo(value) {
   function inner(){
     console.log(number * value)
   }
-  inner();
+  return inner();
 }
 multiplyByTwo(4);
