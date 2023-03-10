@@ -3,7 +3,7 @@ function nicknameMap(persons) {
   const nicknames =[];
   
   for (i = 0; i < persons.length; i++) {
-    nicknames.push(persons[i].name, persons[i].age); 
+    nicknames.push(persons[i].name +" " +"-"+ " "+ persons[i].age); 
   }   
     return nicknames
 }
