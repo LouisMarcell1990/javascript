@@ -4,6 +4,6 @@ function printName () {
     function inner() {
       console.log(helloName)
     }   
-     inner();
+     return inner();
 }
 printName ();
