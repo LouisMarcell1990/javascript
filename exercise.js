@@ -3,7 +3,7 @@ function printName () {
 
     function inner() {
       console.log(helloName)
-    }   
-     setTimeout(inner, 1000);
+    }  
+     return setTimeout(inner, 1000);
 }
 printName ();
