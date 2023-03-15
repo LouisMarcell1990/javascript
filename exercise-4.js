@@ -2,15 +2,11 @@ function uncompletedNotes(notes) {
   
   let notesId = [];
 
-  let done = [];
-
   notes.forEach((e) => { 
-    notesId.push(e);
-     notesId.forEach((id) => {
-      done.push(id.todos);
-       
-    })});done.filter((notes) => notes.done === false);
-return notes
+    notes.filter(todos => todos);
+    notesId.push((e) === false)
+  });
+  return notesId
 }
 
 /* non so come andare avanti*/
