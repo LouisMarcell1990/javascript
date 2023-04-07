@@ -1,6 +1,10 @@
+ function call() {
+   console.log('Hello')
+ }
+ 
  function printAsyncName (callback, name) {
-    setTimeout(() => console.log(callback), 1000);
-    setTimeout(() => console.log(name), 2000)  
+    setTimeout(() => callback(), 1000);
+    setTimeout(() => console.log('Louis'), 2000) 
  }
 
- printAsyncName('Hello','Louis')
+ printAsyncName(call)
