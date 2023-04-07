@@ -1,7 +1,11 @@
-function repeatHello (callback) {
- setInterval(() => console.log(callback), 1000)
+function repeat() {
+    console.log('Hello')
 }
 
-repeatHello('Hello')
+function repeatHello (callback) {
+ setInterval(() => callback(), 1000)
+}
+
+repeatHello(repeat)
 
 //l'arrow function si usa per ridurre il codice
