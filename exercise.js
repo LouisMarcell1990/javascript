@@ -22,7 +22,7 @@ function num(userData) {
 }
 
 logged(isLogged)
-    .then((val) => num(val))
+    .then(num)
     .then((val) => console.log(val))
     .catch((e) => console.error(e))
     .finally(() => console.log('finally!'))
