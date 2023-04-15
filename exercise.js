@@ -5,7 +5,8 @@ const user = {
 };
 
 function localUser() {
-  localStorage.user = JSON.stringify(user);
+  const item = localStorage.getItem(user)
+  localStorage.item = JSON.stringify(user);
   console.log(user)
   }
 
